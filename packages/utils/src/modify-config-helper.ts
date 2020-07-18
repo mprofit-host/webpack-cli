@@ -105,9 +105,7 @@ export function modifyHelperUtil(
             } catch (err) {
                 console.error(red('\nCould not find a yeoman configuration file (.yo-rc.json).\n'));
                 console.error(
-                    red(
-                        "\nPlease make sure to use 'this.config.set('configuration', this.configuration);' at the end of the generator.\n",
-                    ),
+                    red("\nPlease make sure to use 'this.config.set('configuration', this.configuration);' at the end of the generator.\n"),
                 );
                 Error.stackTraceLimit = 0;
                 process.exitCode = -1;
@@ -125,9 +123,7 @@ export function modifyHelperUtil(
                 console.error(err);
                 console.error(err.stack);
                 console.error(
-                    red(
-                        '\nYour yeoman configuration file (.yo-rc.json) was incorrectly formatted. Deleting it may fix the problem.\n',
-                    ),
+                    red('\nYour yeoman configuration file (.yo-rc.json) was incorrectly formatted. Deleting it may fix the problem.\n'),
                 );
                 Error.stackTraceLimit = 0;
                 process.exitCode = -1;
